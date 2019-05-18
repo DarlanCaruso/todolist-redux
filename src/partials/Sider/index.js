@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 
 class Sider extends React.Component {
   state = {
-    collapsed: false
+    collapsed: true
   };
 
   onCollapse = collapsed => {
