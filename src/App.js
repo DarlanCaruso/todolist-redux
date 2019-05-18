@@ -1,14 +1,24 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from "react";
+import Main from "./partials/Main";
+import Sider from "./partials/Sider";
 
 import { Provider } from "react-redux";
 import store from "./store";
 
-const App = () => (
-  <Provider store={store}>
-    <h1>Hello world!</h1>
-  </Provider>
-);
+import { Layout } from "antd";
+import "antd/dist/antd.css";
+
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <Layout style={{ minHeight: "100vh" }}>
+          <Sider />
+          <Main />
+        </Layout>
+      </Provider>
+    );
+  }
+}
 
 export default App;
