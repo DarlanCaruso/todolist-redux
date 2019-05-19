@@ -1,7 +1,6 @@
 import React from "react";
 import { Layout } from "antd";
 import Menu from "../../components/Menu";
-import logo from "../../assets/logo.png";
 
 class Sider extends React.Component {
   state = {

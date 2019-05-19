@@ -26,6 +26,9 @@ export default function todos(state = INITIAL_STATE, action) {
         }
       ];
 
+    case "REMOVE_TODO":
+      return state.filter(todo => todo.key !== action.payload.key);
+
     default:
       return state;
   }
