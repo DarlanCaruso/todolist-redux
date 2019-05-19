@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Main from "./partials/Main";
 import Sider from "./partials/Sider";
-
+import "./config/ReactotronConfig";
 import { Provider } from "react-redux";
 import store from "./store";
 
