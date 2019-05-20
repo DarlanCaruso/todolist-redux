@@ -1,8 +1,8 @@
 import React from "react";
 // import Breadcrumb from "../Breadcrumb";
 import { Layout } from "antd";
-import TodoList from "../../components/Todo";
 
+import Routes from "../../routes";
 const Content = () => (
   <Layout.Content style={{ margin: "16px" }}>
     {/* <Breadcrumb /> */}
@@ -13,7 +13,7 @@ const Content = () => (
         minHeight: 360
       }}
     >
-      <TodoList />
+      <Routes />
     </div>
   </Layout.Content>
 );
